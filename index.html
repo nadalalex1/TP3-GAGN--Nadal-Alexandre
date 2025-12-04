@@ -12,6 +12,44 @@
 <body>
 	<!-- Vous devez ajouter vos balises sous ce commentaire -->
 	
+	<header>
+		<a href="index.html"><img src="img/equigest-logo.png" alt="Logo"></a>
+		<nav class="header-nav">
+			<ul>
+				<li><a href="employes.html">Employés</a></li>
+				<li><a href="fiche-employes.html">Mon compte</a></li>
+				<li><a href="creation-employe.html">Créer un employé</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<div class="grid-accueil">
+			<form id="frm-connexion" action="employes.html" method="post">
+				<label for="txt-utilisateur">Nom d'utilisateur :</label>
+				<input type="text" id="txt-utilisateur" name="txt-utilisateur" required>
+
+				<label for="psw-connexion">Mot de passe :</label>
+				<input type="password" id="psw-connexion" name="psw-connexion" required>
+
+				<input type="submit" value="Soumission">Se connecter</input>
+			</form>
+			<img src="img/employe1.jpg" alt="Portrait Employé" class="img-grosse">
+			<img src="img/employe2.jpg" alt="Portrait Employé">
+			<img src="img/employe3.jpg" alt="Portrait Employé">
+			<img src="img/employe4.jpg" alt="Portrait Employé">
+			<img src="img/employe5.jpg" alt="Portrait Employé">
+		</div>
+	</main>
+
+	<footer>
+		<div class="footer-contacts">
+			<p><strong>EquiGest</strong> : 1660 Boul. de l'Entente, Québec</p>
+			<a href="tel:+3673803171">367-380-3171</a>
+		</div>
+		<p>Site réalisé par : <strong>Nadal-Alexandre Gagné</strong> | Dans le cadre du programmes Techniques de l'informatique - Cégep Garneau</p>
+	</footer>
+
 </body>
 
 </html>
