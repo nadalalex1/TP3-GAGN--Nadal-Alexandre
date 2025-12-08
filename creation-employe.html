@@ -20,6 +20,38 @@
 		</nav>
 	</header>
 
+	<main>
+		<h1>Créer un employé</h1>
+
+<form action="https://nrichardgarneau.pythonanywhere.com/" method="post">
+	
+	<label for="txt-nom">Nom de l'employé : </label>
+	<input type="text" name="txt-nom" id="txt-nom" required>
+
+	<label for="txt-prenom">Prénom de l'employé</label>
+	<input type="text" name="txt-prenom" id="txt-prenom" required>
+
+	<label for="sel-poste">Poste de l'employé</label>
+	<select name="sel-poste" id="sel-poste" required>
+		<option value="direction" id="sel-poste-direction">Direction</option>
+		<option value="administration" id="sel-poste-administration">Administration</option>
+		<option value="marketing" id="sel-poste-marketing">Marketing</option>
+		<option value="ressources-humaines" id="sel-poste-ressources-humaines">Ressources humaines</option>
+		<option value="gestion-projet" id="sel-poste-gestion-projet">Gestion de projet</option>
+		<option value="vente" id="sel-poste-vente">Vente</option>
+		<option value="finance" id="sel-poste-finance">Finance</option>
+		<option value="manutention" id="sel-poste-manutention">Manutention</option>
+		<option value="informatique" id="sel-poste-informatique">Informatique</option>
+		<option value="design" id="sel-poste-design">Design</option>
+		<option value="ingenierie" id="sel-poste-ingenierie">Ingénierie</option>
+		<option value="journalier" id="sel-poste-journalier">Journalier</option>
+	</select>
+
+	<label for="date-embauche"></label>
+</form>
+
+	</main>
+
   <footer>
 		<div class="footer-contacts">
 			<p><strong>EquiGest</strong> : 1660 Boul. de l'Entente, Québec</p>
