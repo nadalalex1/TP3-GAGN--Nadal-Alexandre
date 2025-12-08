@@ -47,7 +47,42 @@
 		<option value="journalier" id="sel-poste-journalier">Journalier</option>
 	</select>
 
-	<label for="date-embauche"></label>
+	<label for="date-embauche">Date de l'embauche : </label>
+	<input type="date" name="date-embauche" id="date-embauche" required>
+
+	<input type="checkbox" name="ckb-arret" id="ckb-arret">
+	<label for="ckb-arret">L'employé est en arrêt de travail</label>
+
+	<fieldset>
+		<legend>Contacts</legend>
+
+		<label for="email-employe">Courriel : </label>
+		<input type="email" name="email-employe" id="email-employe" required>
+
+		<label for="tel-employe">Téléphone</label>
+		<input type="tel" name="tel-employe" id="tel-employe" required>
+
+		<fieldset>
+			<legend>Moyen de communication préféré</legend>
+			<div>
+				<input type="radio" name="rdo-communication" id="moyen-email" value="email" required>
+				<label for="moyen-email">Courriel</label>
+			</div>
+			<div>
+				<input type="radio" name="rdo-communication" id="moyen-tel" value="tel" required>
+				<label for="moyen-tel">Téléphone</label>
+			</div>
+			<div>
+				<input type="radio" name="rdo-communication" id="moyen-texto" value="texto" required>
+				<label for="moyen-texto">Texto</label>
+			</div>
+		</fieldset>
+	</fieldset>
+	<Label for="txta-commentaires">Commentaires : </Label>
+	<textarea name="txta-commentaires" id="txta-commentaires" maxlength="400"></textarea>
+
+	<input type="submit" value="Enregistrer l'employé">
+
 </form>
 
 	</main>
