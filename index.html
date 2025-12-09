@@ -15,29 +15,40 @@
 	
 	<header>
 		<div class="container space-btwn-flex">
-      <a href="index.html"><img src="img/equigest-logo-pale.png" alt="Logo"></a>
-      <nav>
-        <ul>
-          <li><a href="employes.html">Employés</a></li>
+			<a href="index.html"><img src="img/equigest-logo-pale.png" alt="Logo"></a>
+			<nav>
+				<ul>
+				<li><a href="employes.html">Employés</a></li>
 
-          <li><a href="creation-employe.html">Créer un employé</a></li>
-		  <li><a href="fiche-employe.html">Mon compte</a></li>
-        </ul>
-      </nav>
-    </div>
+				<li><a href="creation-employe.html">Créer un employé</a></li>
+				<li><a href="fiche-employe.html">Mon compte</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 
 	<main>
 		<div class="container">
 			<div class="grid-accueil">
 				<form class="frm-connexion" action="employes.html" method="post">
-					<label for="txt-utilisateur">Nom d'utilisateur :</label>
-					<input type="text" id="txt-utilisateur" name="txt-utilisateur" required>
+					<div>
+						<h1>Connexion</h1>
+					</div>
 
-					<label for="psw-connexion">Mot de passe :</label>
-					<input type="password" id="psw-connexion" name="psw-connexion" required>
+					<div>
+						<label for="txt-utilisateur">Nom d'utilisateur : </label>
+						<input type="text" id="txt-utilisateur" name="txt-utilisateur" required>
+					</div>
+					
+					<div>
+						<label for="psw-connexion">Mot de passe : </label>
+						<input type="password" id="psw-connexion" name="psw-connexion" required>
+					</div>
 
-					<input type="submit" value="Se connecter">
+					<div>
+						<input type="submit" value="Se connecter" class="form-submit">
+					</div>
+
 				</form>
 				<img src="img/employe1.jpg" alt="Portrait Employé" class="img-grosse">
 				<img src="img/employe2.jpg" alt="Portrait Employé">
@@ -50,13 +61,15 @@
 	</main>
 
 	<footer>
-		<div class="footer-contacts">
+		<div class="container space-btwn-flex">
 			<p><strong>EquiGest</strong> : 1660 Boul. de l'Entente, Québec</p>
 			<a href="tel:+3673803171">367-380-3171</a>
 		</div>
-		<p>Site réalisé par : <strong>Nadal-Alexandre Gagné</strong> | Dans le cadre du programmes Techniques de l'informatique - Cégep Garneau</p>
+		
 	</footer>
-
+  <div class="below-footer">
+    <p>Site réalisé par : <strong>Nadal-Alexandre Gagné</strong> | Dans le cadre du programmes Techniques de l'informatique - Cégep Garneau</p>
+  </div>
 </body>
 
 </html>
