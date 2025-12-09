@@ -11,6 +11,10 @@ body{
 /* Mise en page (positionnement)
 ========================================================================== */
 
+body img {
+ width: 100%;
+}
+
 .container{
 	width: 90%;
 	max-width: 1200px;
