@@ -149,13 +149,17 @@ td {
 
 
 .grid-accueil form div {
-	margin: 20px 0;
+	margin: 10px 0;
 	width: 100%;
-	flex-direction: row;
 }
 
-.grid-accueil form label {
-	margin-right: 10px;
+
+.grid-accueil form > div{
+	align-items: normal;
+}
+
+.grid-accueil form > div .form-submit{
+	align-self: baseline;
 }
 
 
