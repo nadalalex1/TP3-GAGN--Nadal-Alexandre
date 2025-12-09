@@ -10,14 +10,17 @@
 </head>
 <body>
   <header>
-		<a href="index.html"><img src="img/equigest-logo.png" alt="Logo"></a>
-		<nav class="header-nav">
-			<ul>
-				<li><a href="employes.html">Employés</a></li>
-				<li><a href="fiche-employe.html">Mon compte</a></li>
-				<li><a href="creation-employe.html">Créer un employé</a></li>
-			</ul>
-		</nav>
+		<div class="container space-btwn-flex">
+      <a href="index.html"><img src="img/equigest-logo-pale.png" alt="Logo"></a>
+      <nav>
+        <ul>
+          <li><a href="employes.html">Employés</a></li>
+          
+          <li><a href="creation-employe.html">Créer un employé</a></li>
+          <li><a href="fiche-employe.html">Mon compte</a></li>
+        </ul>
+      </nav>
+    </div>
 	</header>
 
   <main>
@@ -30,7 +33,10 @@
       <h2>Informations</h2>
 
       <div class="fiche-employe-contenu">
-        <img src="img/employe1.jpg" alt="Portrait de l'employé">
+        <div class="w33" id="fiche-employe-img">
+          <img src="img/employe1.jpg" alt="Portrait de l'employé">
+        </div>
+        
 
         <div>
           <h3>Contacts</h3>
@@ -52,10 +58,10 @@
       <h2>Gestion des paies</h2>
 
       <div class="fiche-employe-contenu">
-        <div class="operations">
+        <div class="operations w33">
           <h3>Opérations</h3>
           <a href="#">Créer une paie</a>
-          <a href="#">Modifier une apie</a>
+          <a href="#">Modifier une paie</a>
           <a href="#">Générer les feuillets fiscaux</a>
         </div>
         <div>

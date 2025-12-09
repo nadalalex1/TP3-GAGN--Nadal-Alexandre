@@ -6,15 +6,99 @@
 
 body{
 	background-color: white;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	background-color: #222;
+	padding: 10px;
+	margin: 20px 0;
+	
+	color: lightgray;
+}
+
+.basic-link {
+	color: #00e;
+	background-color: transparent;
+	margin: 0;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	padding: 5px;
+	font-size: 1.75rem;
+	color: white;
+	background-color: #222;
 }
 
 /* Mise en page (positionnement)
 ========================================================================== */
 
+.grid-accueil {
+	margin-top: 30px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 20px;
+}
+
+.grid-accueil form {
+	grid-column: 1/3;
+	grid-row: 2/4;
+}
+.grid-accueil .img-grosse {
+	grid-row: 1/3;
+	grid-column: 3/5;
+}
+
 body img {
  width: 100%;
 }
+
+header {
+	display: flex;
+	justify-content: center;
+	background-color: #222;
+
+}
+
+.fiche-employe-contenu {
+	display: flex;
+}
+
+table {
+	width: 100%;
+}
+
+.fiche-employe-contenu > div{
+	width: 66%;
+	margin: 10px;
+	padding: 10px;
+	background-color: lightgray;
+}
+
+#fiche-employe-img {
+	padding: 0;
+}
+
+
+.fiche-employe-contenu > .w33 {
+	width: 33%;
+	margin: 10px;
+	padding: 10px;
+}
+
+.space-btwn-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: black solid 1px;
+	margin-bottom: 10px;
+}
+
 
 .container{
 	width: 90%;
@@ -26,12 +110,43 @@ body img {
 /* Header / Navigations / Footer 
 ========================================================================== */
 
+header .space-btwn-flex {
+	
+	border: none;
+	margin: 0;
+}
+
+
+nav ul {
+	list-style: none;
+
+}
+nav {
+	padding: 0;
+	margin: 0;
+}
+header img {
+	max-width: 33%;
+	margin: 0;
+	padding: 0;
+}
+header a {
+	margin: 0;
+	
+}
+
+nav li {
+	display: inline-block;
+}
+
 
 
 /* Composantes générales (exemples : section, cartes, tableaux, etc.)
 ========================================================================== */
 
-
+table {
+	margin-bottom: 20px;
+}
 
 /* Formulaires
 ========================================================================== */
